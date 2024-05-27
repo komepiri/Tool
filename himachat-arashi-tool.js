@@ -3,10 +3,10 @@
 
 // フォームデータを作成
 const formData = new URLSearchParams();
-formData.append('roomid', '194806'); //部屋ID
-formData.append('marumie', '52447635'); //多分変更必須
-formData.append('mysession', '8c0dodbvj5c8swko8g84ws08c'); //多分変更必須
-formData.append('waruguti', 'aaa'); // 送信したいこと
+formData.append('roomid', 'RoomID'); //部屋ID
+formData.append('marumie', '1234567'); //必ずDevToolのネットワークから確認すること
+formData.append('mysession', 'hoge'); //必ずDevToolのネットワークから確認すること
+formData.append('waruguti', 'example'); // 送信したいこと
 
 // fetchを使用してPOSTリクエストを送信
 fetch('https://himachat.jp/gomitame.php?mode=monku', {

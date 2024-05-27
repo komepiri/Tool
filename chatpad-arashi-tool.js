@@ -11,7 +11,7 @@ const submitButton = document.querySelector('img[id="sayButton"]');
 // 指定した文字列をtextareaに挿入し、submitボタンをクリックするやつ
 function postMessage() {
     // 指定された文字列をtextareaに挿入
-    const messageString = "こんにちは";
+    const messageString = "こんにちは"; // メッセージ内容
     textarea.value = messageString;
     
     // ボタンをクリック

@@ -12,7 +12,7 @@ const submitButton = document.querySelector('input[type="submit"][name="post"]')
 // 指定した文字列をtextareaに挿入し、submitボタンをクリックするやつ
 function postMessage() {
     // 指定された文字列をtextareaに挿入
-    const messageString = "メッセージ" + Math.random().toString(36).substring(7);
+    const messageString = "メッセージ" + Math.random().toString(36).substring(7); // メッセージ内容 Math.randomは消さないこと
     textarea.value = messageString;
     
     // ボタンをクリック

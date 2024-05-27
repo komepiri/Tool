@@ -1,9 +1,9 @@
 // ヒマコミュニティのタイムライン専用
 // フォームデータを作成
 const formData = new URLSearchParams();
-formData.append('marumie', '52447635'); //多分変更必須
-formData.append('mysession', '8c0dodbvj5c8swko8g84ws08c'); //多分変更必須
-formData.append('fnaiyou', 'test'); // 書きたいこと
+formData.append('marumie', 'hoge'); // 必ずDevToolのネットワークから確認すること
+formData.append('mysession', 'hoge'); // 必ずDevToolのネットワークから確認すること
+formData.append('fnaiyou', 'hoge'); // 書きたいこと
 
 // fetchを使用してPOSTリクエストを送信
 fetch('https://himachat.jp/community/timeline_Toukou.php', {

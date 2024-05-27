@@ -5,8 +5,8 @@
 const interval = 2;
 setInterval(() => {
     const formData = new URLSearchParams();
-    formData.append('comment', 'あなたのコメント');
-    formData.append('color', '#000000'); // お好きな色コードを指定してください
+    formData.append('comment', 'hoge'); //メッセージ
+    formData.append('color', '#000000'); // 色コード指定、なければこのまま
 
     fetch("https://alicex.jp/chat_park/chat/1/view", {
         method: "POST",

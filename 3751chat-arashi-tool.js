@@ -2,10 +2,10 @@
 // Created By Komepiri
 
 const roomID = "<roomID>"; // 部屋のURLに書いてある
-const auth = "<auth>"; // 部屋のURL(ry
+const auth = "<auth>"; // 部屋のURL(以下略)
 // フォームデータを作成
 const formData = new URLSearchParams();
-formData.append('chat', '<message>');
+formData.append('chat', 'メッセージ');
 
 // fetchを使用してPOSTリクエストを送信
 fetch(`https://www.3751chat.com/ajax.php?&room_id=${roomID}&fromsize=445&chatter_auth=${auth}`, {

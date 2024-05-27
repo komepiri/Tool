@@ -3,15 +3,15 @@
 
 // フォームデータを作成
 const formData = new URLSearchParams();
-formData.append('marumie', '52447635'); //多分変更必須
-formData.append('mysession', '8c0dodbvj5c8swko8g84ws08c'); //多分変更必須
+formData.append('marumie', '12345567'); //　必ずDevToolのネットワークから確認すること
+formData.append('mysession', 'hoge'); //必ずDevToolのネットワークから確認すること
 formData.append('roomname', 'aaa'); // 部屋名
-formData.append('roompass', 'kome'); // 部屋管理パス
+formData.append('roompass', 'hoge'); // 部屋管理パス
 formData.append('shoukai', 'aaa'); // 部屋紹介
-formData.append('kakolog', '0'); // 0固定でいい
-formData.append('tuuwa', '0'); // 0固定でいい
-formData.append('ninzuu', '50'); // 部屋最大人数
-formData.append('douituip', '1'); // 同一IPの入室許可
+formData.append('kakolog', '0'); // 0固定でいい 1にすると過去ログなし
+formData.append('tuuwa', '0'); // 0固定でいい 1は通話部屋
+formData.append('ninzuu', '50'); // 部屋最大人数 2~50まで
+formData.append('douituip', '1'); // 同一IPの入室許可 1=許可 0=拒否
 formData.append('privatepass', ''); // 部屋パス
 
 // fetchを使用してPOSTリクエストを送信
