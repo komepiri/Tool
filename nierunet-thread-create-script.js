@@ -1,6 +1,6 @@
 // nieru.net Thread Create Script
 // Created By Ame_x
-
+// Remixed By Komepiri
 
 const interval = 2;
 setInterval(() => {
