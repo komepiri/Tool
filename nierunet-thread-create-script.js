@@ -2,9 +2,14 @@
 // Created By Ame_x
 // Remixed By Komepiri
 
+const bbsID = "bbsid"
+const title = "thread_title"
+const name = "post_user_name"
+const message = "messages"
+
 const interval = 2;
 setInterval(() => {
-fetch("https://nieru.net/bbsid/nt", {
+fetch(`https://nieru.net/${bbsID}/nt`, {
   "headers": {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "accept-language": "ja,en-US;q=0.9,en;q=0.8",
@@ -22,7 +27,7 @@ fetch("https://nieru.net/bbsid/nt", {
     "Referer": location.href + "/nm",
     "Referrer-Policy": "strict-origin-when-cross-origin"
   },
-  "body": "------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"title\"\r\n\r\n<title>"+"\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\n<name>"+"\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"usr1\"\r\n\r\n\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"message\"\r\n\r\n<message>"+"\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"submit\"\r\n\r\n投稿\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"mail\"\r\n\r\n\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"files[]\"; filename=\"\"\r\nContent-Type: application/octet-stream\r\n\r\n\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"edit\"\r\n\r\na\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"del\"\r\n\r\na\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"respass\"\r\n\r\n\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj--\r\n",
+  "body": "------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"title\"\r\n\r\n"+ title + Math.random().toString(32).substring(2) +"\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\n"+ name +"\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"usr1\"\r\n\r\n\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"message\"\r\n\r\n"+ message + Math.random().toString(32).substring(2) +"\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"submit\"\r\n\r\n投稿\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"mail\"\r\n\r\n\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"files[]\"; filename=\"\"\r\nContent-Type: application/octet-stream\r\n\r\n\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"edit\"\r\n\r\na\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"del\"\r\n\r\na\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj\r\nContent-Disposition: form-data; name=\"respass\"\r\n\r\n\r\n------WebKitFormBoundaryjneWBulFWw9tUTxj--\r\n",
   "method": "POST"
 });
 }, interval * 1800)
