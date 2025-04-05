@@ -1,4 +1,4 @@
-// 3751chat Arashi Tool
+// 3751chat Continuous Submission Attack Tool
 // Created By Komepiri
 
 const roomID = "<roomID>"; // 部屋のURLに書いてある
