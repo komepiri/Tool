@@ -1,4 +1,4 @@
-// Chatpark Realtime Edition Arashi Tool
+// Chatpark Realtime Edition continuous-submission-attack-tool
 // Created By Komepiri
 
 
