@@ -1,4 +1,4 @@
-// drrrchat Arashi Tool
+// drrrchat continuous-submission-attack-tool
 // https://drrrkari.com
 // Created By Komepiri
 
