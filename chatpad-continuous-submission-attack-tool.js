@@ -1,4 +1,4 @@
-// ChatPad Arashi Tool
+// ChatPad continuous-submission-attack-tool
 // Created By Komepiri
 
 
