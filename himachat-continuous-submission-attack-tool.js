@@ -1,4 +1,4 @@
-// himachat Arashi Tool
+// himachat continuous-submission-attack-tool
 // Created By Komepiri
 
 // フォームデータを作成
