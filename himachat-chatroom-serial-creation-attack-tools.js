@@ -1,4 +1,4 @@
-// himachat Chatroom Create Tool
+// himachat Chatroom Serial Creation Attack Tools
 // Created By Komepiri
 
 // フォームデータを作成
