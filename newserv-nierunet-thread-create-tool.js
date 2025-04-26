@@ -31,4 +31,4 @@ setInterval(() => {
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.error('Error:', error));
-}, interval * 1800); // ←これは下で説明
+}, interval * 1800);
