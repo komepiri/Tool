@@ -61,11 +61,17 @@
 
   window.intervalId = null;
 
+  // チェックボックスの変更時にThread ID入力欄を表示/非表示にする
   document.getElementById('autoThreadId').addEventListener('change', function() {
     const threadIdContainer = document.getElementById('threadIdContainer');
-    threadIdContainer.style.display = this.checked ? 'none' : 'block';
+    if (this.checked) {
+      threadIdContainer.style.display = 'none'; // 自動連投の場合、Thread ID入力欄を非表示
+    } else {
+      threadIdContainer.style.display = 'block'; // 手動でThread IDを入力する場合、表示
+    }
   });
 
+  // 投稿開始の関数
   window.startPosting = function() {
     const autoThreadId = document.getElementById('autoThreadId').checked;
     const name = document.getElementById('name').value;
@@ -82,11 +88,13 @@
       log.scrollTop = log.scrollHeight;
     };
 
+    // 実行中でないか確認
     if (window.intervalId !== null) {
       logMessage("すでに実行中です。");
       return;
     }
 
+    // Thread IDが必要な場合の確認
     if (!autoThreadId) {
       const threadId = document.getElementById('thread_id').value;
       if (!threadId) {
@@ -110,6 +118,7 @@
       formData.append("post_password", post_password);
       formData.append("view_password", view_password);
 
+      // 自動連投の場合、Thread IDをURLから取得
       const threadId = autoThreadId ? window.location.pathname.split('/')[1] : document.getElementById('thread_id').value;
 
       fetch(`https://chatpark.nieru.net/${threadId}/write`, {
@@ -137,6 +146,7 @@
     }, interval);
   };
 
+  // 投稿停止の関数
   window.stopPosting = function() {
     const logMessage = function(msg) {
       const log = document.getElementById('log');
