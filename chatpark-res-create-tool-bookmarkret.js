@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="flex justify-between gap-4">
-          <button onclick="startPosting()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">送信開始</button>
+          <button onclick="startPosting()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">攻撃開始</button>
           <button onclick="stopPosting()" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">停止</button>
         </div>
         <div id="log" class="bg-gray-200 text-sm p-3 rounded h-48 overflow-y-auto font-mono whitespace-pre-wrap"></div>
